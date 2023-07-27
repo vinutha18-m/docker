@@ -1,0 +1,29 @@
+# inside container
+----------------------------------
+1  ls
+    2  wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.78/bin/apache-tomcat-9.0.78.tar.gz
+    3  yum install wget -y
+    4  wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.78/bin/apache-tomcat-9.0.78.tar.gz
+    5  ls
+    6  tar -zxvf apache-tomcat-9.0.78.tar.gz
+    7  yum install tar -y
+    8  tar -zxvf apache-tomcat-9.0.78.tar.gz
+    9  yum install gzip -y
+   10  tar -zxvf apache-tomcat-9.0.78.tar.gz
+   11  ls
+   12  cd apache-tomcat-9.0.78
+   13  ls
+   14  cd bin/
+   15  ls
+   16  sh startup.sh
+   17  pwd
+   18  cd ..
+   19  yum install java -y
+   20  ls
+   21  cd bin/
+   22  pwd
+   23  ls
+   24  sh startup.sh
+   25  exit
+   26  pwd
+   27  history
