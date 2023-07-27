@@ -1,0 +1,13 @@
+mkdir Dockerfile
+   18  ls
+   19  cd Dockerfile/
+   20  vi dockerfile
+   21  cat dockerfile
+   22  cd ..
+   23  pwd
+   24  docker build -t vinu Dockerfile/
+   25  docker images
+   26  docker run -it -d vinu
+   27  docker ps
+   28  docker exec -it <id> /bin/bash
+   29  history
