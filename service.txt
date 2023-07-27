@@ -1,0 +1,12 @@
+docker service and scalling
+
+ docker swarm init
+   32  docker service ls
+   34  docker service create --replicas=3 -p 4000:80 --name=server httpd
+   35  docker service ls
+
+   36  docker service scale 2j42ac98xzix=2
+   37  docker service ls
+   38  docker service rm 2j42ac98xzix
+   39  docker service ls
+   40  docker swarm leave -f
