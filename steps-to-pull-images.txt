@@ -1,0 +1,12 @@
+steps to do in docker
+
+sudo su
+yum update -y
+vi docker.sh
+copy paste code then :wq
+sh docker.sh(op)
+docker pull httpd
+docker run -it -d httpd
+docker exec -it <id> /bin/bash
+docker ps
+docker images
