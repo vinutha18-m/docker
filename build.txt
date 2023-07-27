@@ -2,6 +2,17 @@ mkdir Dockerfile
    18  ls
    19  cd Dockerfile/
    20  vi dockerfile
+
+FROM amazonlinux
+MAINTAINER "shreyasrockingreings@gmail.com"
+RUN yum update -y
+RUN yum install wget -y
+RUN yum install tar -y
+RUN yum install gzip -y
+RUN wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.78/bin/apache-tomcat-9.0.78.tar.gz
+RUN tar -zvxf apache-tomcat-9.0.78.tar.gz
+RUN yum install java -y
+RUN sh apache-tomcat-9.0.78/bin/startup.sh
    21  cat dockerfile
    22  cd ..
    23  pwd
